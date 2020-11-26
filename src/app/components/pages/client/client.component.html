@@ -1,16 +1,33 @@
+<!--<nz-layout class="layout">-->
+<!-- <app-header></app-header>-->
+<!--  <nz-content>-->
+<!--    <nz-breadcrumb>-->
+<!--      <nz-breadcrumb-item><a [routerLink]="['']" routerLinkActive="active-link">Inicio</a></nz-breadcrumb-item>-->
+<!--      <nz-breadcrumb-item><a [routerLink]="['/product']" routerLinkActive="active-link">Productos</a></nz-breadcrumb-item>-->
+<!--      <nz-breadcrumb-item><a [routerLink]="['/service']" routerLinkActive="active-link">Servicios</a></nz-breadcrumb-item>-->
+<!--      <nz-breadcrumb-item><a [routerLink]="['/contact']" routerLinkActive="active-link">Contacto</a></nz-breadcrumb-item>-->
+<!--    </nz-breadcrumb>-->
+<!--    <div class="inner-content">-->
+<!--      <router-outlet></router-outlet>-->
+<!--    </div>-->
+<!--  </nz-content>-->
+<!--  <app-footer></app-footer>-->
+<!--</nz-layout>-->
+
 <nz-layout class="layout">
- <app-header></app-header>
+  <app-header>
+<!--    <div class="logo"></div>-->
+<!--    <ul nz-menu nzTheme="dark" nzMode="horizontal">-->
+<!--      <li nz-menu-item [routerLink]="['']" routerLinkActive="active-link">Inicio</li>-->
+<!--      <li nz-menu-item [routerLink]="['/product']" routerLinkActive="active-link">Productos</li>-->
+<!--      <li nz-menu-item [routerLink]="['/service']" routerLinkActive="active-link">Servicios</li>-->
+<!--      <li nz-menu-item [routerLink]="['/contact']" routerLinkActive="active-link">Contacto</li>-->
+<!--    </ul>-->
+  </app-header>
   <nz-content>
-    <nz-breadcrumb>
-      <nz-breadcrumb-item><a [routerLink]="['']" routerLinkActive="active-link">Inicio</a></nz-breadcrumb-item>
-      <nz-breadcrumb-item><a [routerLink]="['/product']" routerLinkActive="active-link">Productos</a></nz-breadcrumb-item>
-      <nz-breadcrumb-item><a [routerLink]="['/service']" routerLinkActive="active-link">Servicios</a></nz-breadcrumb-item>
-      <nz-breadcrumb-item><a [routerLink]="['/contact']" routerLinkActive="active-link">Contacto</a></nz-breadcrumb-item>
-    </nz-breadcrumb>
     <div class="inner-content">
       <router-outlet></router-outlet>
     </div>
   </nz-content>
-  <app-footer></app-footer>
+  <app-footer>Mi Tierrita ©2020</app-footer>
 </nz-layout>
-

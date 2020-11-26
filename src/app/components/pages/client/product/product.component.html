@@ -8,3 +8,28 @@
   contienen mayor cantidad de antioxidantes y polifenoles cuya función en el cuerpo es combatir los radicales libres que afectan directamente a las células.
   permanece más tiempo en estado óptimo para su consumo debido a que se respeta el tiempo de crecimiento y desarrollo de las plantas.
 </p>
+
+
+<!--<nz-card nzHoverable style="width:240px" [nzCover]="coverTemplate">-->
+<!--  <nz-card-meta nzTitle="Europe Street beat" nzDescription="www.instagram.com"></nz-card-meta>-->
+<!--</nz-card>-->
+<!--<ng-template #coverTemplate>-->
+<!--  <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />-->
+<!--</ng-template>-->
+
+
+<nz-divider nzOrientation="center" nzText="Conoce Nuestros Productos"></nz-divider>
+
+<div nz-row [nzGutter]="16">
+  <div nz-col class="gutter-row" [nzSpan]="6" *ngFor="let item of verduras | paginate: { itemsPerPage: 12, currentPage: p }"><div class="inner-box"></div>
+
+    <nz-card nzHoverable  [nzCover]="coverTemplate">
+      <nz-card-meta nzTitle="{{item.nombre}} - kilo ${{item.precio}}" nzDescription="{{item.descripcion}}"></nz-card-meta>
+    </nz-card>
+    <ng-template #coverTemplate>
+      <img src="{{item.imagen}}"/>
+    </ng-template>
+  </div>
+</div>
+<br>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

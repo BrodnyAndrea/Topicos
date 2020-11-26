@@ -13,6 +13,7 @@ import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 registerLocaleData(localePy, 'es');
 registerLocaleData(en);
@@ -30,6 +31,7 @@ registerLocaleData(en);
     NzIconModule,
     FormsModule,
     BrowserAnimationsModule,
+    NgxPaginationModule,
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'es'},

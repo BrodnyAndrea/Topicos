@@ -1,7 +1,9 @@
 <nz-header>
-
-  <div nz-row class="logos">
-    <div nz-col nzSpan="8"> <div class="logo"></div></div>
-  </div>
-
+  <div class="logo"></div>
+  <ul nz-menu nzMode="horizontal">
+    <li nz-menu-item [routerLink]="['']" routerLinkActive="active-link">Inicio</li>
+    <li nz-menu-item [routerLink]="['/product']" routerLinkActive="active-link">Productos</li>
+    <li nz-menu-item [routerLink]="['/service']" routerLinkActive="active-link">Servicios</li>
+    <li nz-menu-item [routerLink]="['/contact']" routerLinkActive="active-link">Contacto</li>
+  </ul>
 </nz-header>
