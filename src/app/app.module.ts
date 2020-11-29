@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NgxPaginationModule} from 'ngx-pagination';
 
+
 registerLocaleData(localePy, 'es');
 registerLocaleData(en);
 

@@ -8,6 +8,8 @@ import {ProductComponent} from './product.component';
 import {ProductPageRoutingModule} from './product-routing.module';
 import {NzCardModule, NzDividerModule, NzGridModule} from 'ng-zorro-antd';
 import {NgxPaginationModule} from 'ngx-pagination';
+import {FilterPipe} from '../../../../pipes/filter.pipe';
+import {VerdurasService} from '../../../../services/verduras.service';
 
 @NgModule({
   imports: [
@@ -19,8 +21,11 @@ import {NgxPaginationModule} from 'ngx-pagination';
     NzGridModule,
     NzCardModule,
     NgxPaginationModule,
+
   ],
-  declarations: [ProductComponent,],
-  exports: []
+  declarations: [ProductComponent,FilterPipe],
+  exports: [],
+  providers: [VerdurasService]
+
 })
 export class ProductPageModule {}
